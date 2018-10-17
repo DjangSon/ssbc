@@ -48,7 +48,7 @@ Python 2.7.5
 [root@localhost ~]# yum -y install mariadb-devel  
 [root@localhost ~]# yum -y install mariadb-server  
 [root@localhost ~]# cd ssbc-master  
-[root@localhost ssbc-master]# wget https://raw.github.com/pypa/pip/master/contrib/get-pip.py   
+[root@localhost ssbc-master]# wget https://bootstrap.pypa.io/get-pip.py   
 [root@localhost ssbc-master]# python get-pip.py  
 [root@localhost ssbc-master]# pip install -r requirements.txt  
 ```
