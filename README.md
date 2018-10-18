@@ -74,8 +74,8 @@ MariaDB [(none)]> quit;  //创建成功后退出
 6. 安装Sphinx  
 ```Shell
 [root@localhost ssbc-master]# yum -y install unixODBC unixODBC-devel postgresql-libs  
-[root@localhost ssbc-master]# wget http://sphinxsearch.com/files/  sphinx-2.2.9-1.rhel7.x86_64.rpm  
-[root@localhost ssbc-master]# rpm -ivh sphinx-2.2.9-1.rhel7.x86_64.rpm  
+[root@localhost ssbc-master]# wget http://sphinxsearch.com/files/sphinx-2.3.2-1.rhel7.x86_64.rpm
+[root@localhost ssbc-master]# rpm -ivh sphinx-2.3.2-1.rhel7.x86_64.rpm 
 ```
 6. 创建以下文件夹并赋予755权限 
 ```Shell
