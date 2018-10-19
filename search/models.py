@@ -9,7 +9,7 @@ from django.db import models
 import MySQLdb as mdb
 import MySQLdb.cursors
 
-
+# sphinx查询
 search_conn = mdb.connect('127.0.0.1', 'root', '', '', port=9306, charset='utf8', cursorclass=MySQLdb.cursors.DictCursor)
 search_conn.ping(True)
 re_punctuations = re.compile(
@@ -18,6 +18,7 @@ re_punctuations = re.compile(
 
 def escape_string(string):
     return re.sub(r"(['`=\(\)|\-!@~\"&/\\\^\$])", r"\\\1", string)
+
 
 def split_words(string):
     string = re_punctuations.sub(u' ', string).replace(u'-', u' ')
